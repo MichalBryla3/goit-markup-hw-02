@@ -1,8 +1,19 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+  --font-size: 14px;
+  --font-weight: 400;
+  --font-style: normal;
+  --font-family: "Roboto", "Raleway", sans-serif;
+}
+
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: black;
-  background-color: white;
-  font-size: 14px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
 }
 .logo {
   font-size: 26px;
@@ -23,15 +34,13 @@ body {
 
 .link {
   text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 .link:focus,
 .link:active,
 .link:hover {
-  color: rgb(255, 4, 221);
-}
-.signalize {
   color: #2196f3;
-  text-decoration: none;
 }
 
 .title-main {
@@ -48,13 +57,14 @@ body {
   color: white;
   background-color: #2196f3;
   line-height: 1.87;
+  border-radius: 4px;
 }
-
 .tittle {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
 }
+
 .subtitle {
   font-size: 16px;
   font-weight: 500;
@@ -62,7 +72,6 @@ body {
 }
 .paragraph {
   color: #757575;
-  font-size: 14px;
   line-height: 1.71;
 }
 .name {
@@ -82,14 +91,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  border-radius: 4px;
 }
-.buttons:active {
-  color: red;
-}
-.first-button {
+.buttons:focus,
+.buttons:hover {
   color: white;
   background-color: #2196f3;
 }
+
 .title-portfolio {
   font-size: 18px;
   font-weight: 700;
@@ -102,7 +111,7 @@ body {
   line-height: 1.87;
 }
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
 }
 .logo-footer-first {
   color: #2196f3;
